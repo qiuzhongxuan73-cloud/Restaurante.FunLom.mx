@@ -2,65 +2,79 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>传统中式餐厅｜圣诞特色菜单</title>
+<title>传统中式餐厅｜始于1988年的匠心味道</title>
 
 <style>
 body{
     margin:0;
     font-family:"Microsoft YaHei", Arial, sans-serif;
-    background:#f4f4f4;
+    background:#f3f3f3;
+    color:#333;
 }
 header{
-    background:#b22222;
+    background:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), #8b0000;
     color:#fff;
     text-align:center;
-    padding:50px 20px;
+    padding:70px 20px;
 }
 header h1{
     margin:0;
-    font-size:38px;
+    font-size:42px;
+    letter-spacing:2px;
 }
 header p{
-    margin-top:10px;
+    margin-top:15px;
     font-size:18px;
 }
 section{
-    max-width:1100px;
-    margin:50px auto;
+    max-width:1150px;
+    margin:60px auto;
     background:#fff;
-    padding:35px;
-    border-radius:12px;
+    padding:45px;
+    border-radius:14px;
 }
 h2{
-    border-left:6px solid #b22222;
-    padding-left:12px;
+    border-left:6px solid #8b0000;
+    padding-left:15px;
+    margin-bottom:25px;
+}
+p{
+    line-height:1.9;
+    font-size:16px;
 }
 .images{
     text-align:center;
-    margin:25px 0;
+    margin:30px 0;
 }
 .images img{
-    width:300px;
-    margin:12px;
-    border-radius:10px;
+    width:320px;
+    margin:15px;
+    border-radius:12px;
 }
-.menu-box{
+.menu-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:20px;
-    margin-top:20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
 }
 .menu-item{
-    background:#fff8ee;
-    padding:20px;
-    border-radius:8px;
+    background:#fff7ee;
+    padding:25px;
+    border-radius:10px;
+}
+.menu-item h3{
+    margin-top:0;
 }
 footer{
-    background:#333;
+    background:#222;
     color:#fff;
     text-align:center;
-    padding:30px 20px;
+    padding:40px 20px;
     font-size:15px;
+}
+.highlight{
+    background:#fdf1e6;
+    padding:30px;
+    border-radius:10px;
 }
 </style>
 </head>
@@ -69,18 +83,23 @@ footer{
 
 <!-- 圣诞新品 -->
 <header>
-    <h1>🎄 圣诞特色推出 · 新品菜单</h1>
-    <p>Christmas Special Menu · 限时供应</p >
+    <h1>🎄 圣诞特色推出 · 限时新品</h1>
+    <p>Christmas Special Menu · 传统中式风味的节日呈现</p >
 </header>
 
 <section>
     <div class="images">
-        <!-- 这里放你“圣诞菜单”的图片文件名 -->
         < img src="IMG_3465.jpeg" alt="圣诞特色菜单">
     </div>
+    <p>
+        在这个温馨的圣诞季，我们精心推出圣诞限定新品菜单。
+        主厨在保留中式料理灵魂的基础上，
+        融合节日氛围与创意表达，
+        让传统味道在节日中焕发全新生命。
+    </p >
 </section>
 
-<!-- 餐厅照片 + 历史 -->
+<!-- 餐厅与历史 -->
 <section>
     <h2>关于我们 · Nuestra Historia</h2>
 
@@ -89,40 +108,60 @@ footer{
     </div>
 
     <p>
-        本店创立于 <strong>1988 年</strong>，是一家拥有深厚历史底蕴的传统中式餐厅。
-        三十余年来，我们始终坚持手工烹饪与地道风味，
-        将中华饮食文化完整地呈现在每一位顾客的餐桌之上。
+        本店创立于 <strong>1988 年</strong>，
+        是一家拥有深厚历史底蕴的传统中式餐厅。
+        三十余年来，我们始终坚守手工烹饪与经典技法，
+        将中华饮食文化一代代传承下来。
+    </p >
+
+    <p>
+        对我们而言，餐厅不仅是用餐的地方，
+        更是记忆、情感与文化交汇的空间。
+        无论时代如何变化，我们始终相信，
+        好味道值得被认真对待。
     </p >
 </section>
 
-<!-- 菜单分类 -->
+<!-- 理念 -->
+<section class="highlight">
+    <h2>我们的理念</h2>
+    <p>
+        我们尊重传统，却不止步于传统。
+        从食材甄选、火候控制到摆盘呈现，
+        每一道菜品都凝聚着经验与匠心。
+        在经典之上不断创新，
+        是我们持续三十余年的坚持。
+    </p >
+</section>
+
+<!-- 菜单 -->
 <section>
     <h2>Menú</h2>
 
-    <div class="menu-box">
+    <div class="menu-grid">
         <div class="menu-item">
             <h3>🥟 Entrada</h3>
-            <p>传统开胃菜，清爽可口</p >
+            <p>精选传统开胃菜，为用餐开启美好序章。</p >
         </div>
 
         <div class="menu-item">
             <h3>🥤 Bebida</h3>
-            <p>茶饮、特色饮品</p >
+            <p>中式茶饮与特色饮品，平衡口感层次。</p >
         </div>
 
         <div class="menu-item">
             <h3>🍜 Platillo</h3>
-            <p>经典中式主菜</p >
+            <p>经典中式主菜，传承多年的招牌风味。</p >
         </div>
 
         <div class="menu-item">
             <h3>🆕 Nuevos</h3>
-            <p>全新创意菜品</p >
+            <p>全新创意菜品，结合现代口味灵感。</p >
         </div>
 
         <div class="menu-item">
             <h3>⭐ Especial</h3>
-            <p>主厨推荐 · 招牌菜</p >
+            <p>主厨推荐，每一道都是我们的骄傲。</p >
         </div>
     </div>
 </section>
@@ -132,6 +171,7 @@ footer{
     <p>📍 地址：Av. Principal #123, Ciudad</p >
     <p>📞 电话：55 1234 5678</p >
     <p>营业时间：11:00 – 22:00</p >
+    <p>© 1988–至今 · 传统中式餐厅</p >
 </footer>
 
 </body>
